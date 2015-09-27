@@ -22,13 +22,11 @@ public class Core {
 	public int coreGame(String[][] cardArray){
 		int sum = 0;
 		for (int i = 0; i < cardArray.length; i++) {
-			// jumble/shuffle cardArray[i][0]
-		String[] tempArray = cardArray[i];
 		String[] workingArray = new String[cardArray[i].length];
 		workingArray = cardArray[i];
 		// jumbler(workingArray);
 			// Show Card to user
-			for (int j = 0; j < workingArray.length; j++) {
+			for (int j = 1; j < workingArray.length; j++) {
 				System.out.print(workingArray[j] + " ");
 				if(j%2==0){
 					System.out.println("\n");
@@ -37,8 +35,7 @@ public class Core {
 		System.out.println("Is your selection in this card?\n (y/n)");
 			if((in.nextLine()).equals("y")) {
 				// add card[1] to sum if 'Yes'
-				// System.out.println("tempArray = " + tempArray[0]);
-				sum = sum + Integer.parseInt(tempArray[0]);
+				sum = sum + Integer.parseInt(workingArray[0]);
 			}
 		}
 		return sum;

@@ -31,7 +31,7 @@ public class ReadYourMind{
 			System.out.println("===================================================");
 			
 			for (int i=1; i < elementArray.list.length; i++) {
-				System.out.print(elementArray.list[i] + ", ");
+				System.out.print(elementArray.list[i] + " | ");
 				if(i%5==0){
 					System.out.println("\n");
 				}
