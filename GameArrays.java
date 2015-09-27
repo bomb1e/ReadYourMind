@@ -3,9 +3,9 @@
 public class GameArrays {
 	public String list[] = {"","Mascot","Roslynne","Kate","Kpano","Tsatsu","Mustapha"
 						,"Yinka","Jumba","Yeboah", "Kayode","Edmond","Chidi"
-						,"Chidi","Bubu","Maxwell","Opeyemi","Julius","Law"
+						,"Bubu","Maxwell","Opeyemi","Julius","Law"
 						,"Bernard","Tabitha","Patience","Eric","Samuel"
-						,"Nana","Nyawira","Mary","Oluwasegun","Mukeli"
+						,"Nana-Ama","Nyawira","Mary","Oluwasegun","Mukeli"
 						,"Amanze","Ibukun","Paul","Chiamaka"};		
 		String[] positionA = {"1",list[1],list[3],list[5],list[7],list[9],list[11],list[13],
 							  list[15],list[17],list[19],list[21],list[23],list[25],

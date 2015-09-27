@@ -10,8 +10,8 @@ public class ReadYourMind{
 		int sum = 0;
 		String user;
 		Scanner input = new Scanner(System.in);
-		Scanner input2 = new Scanner(System.in);
-		Scanner input3 = new Scanner(System.in);
+		// Scanner input2 = new Scanner(System.in);
+		// Scanner input3 = new Scanner(System.in);
 		System.out.println("Welcome to MindReader Game.");
 		System.out.println("Do you want to play MindReader?");
 
@@ -24,17 +24,23 @@ public class ReadYourMind{
 		if(choice == 1){
 			System.out.println("Thanks for opting to play MindReader.");
 			System.out.println("Enter your username");
-			user = input2.nextLine();
+			user = input.nextLine();
 
 			System.out.println("Choose List\n 1.EiTs");
 			System.out.println("Here is the List. Pick a name and keep it a secret");
+			System.out.println("===================================================");
 			
-			for (int i=0; i < elementArray.list.length; i++) {
-				System.out.println(elementArray.list[i]);
+			for (int i=1; i < elementArray.list.length; i++) {
+				System.out.print(elementArray.list[i] + ", ");
+				if(i%5==0){
+					System.out.println("\n");
+				}
 			}
+			System.out.print("\n");
+			System.out.println("===================================================");	
 			
 				sum = core.coreGame(elementArray.cardArray);
-				System.out.println(user + " picked " + sum);		
+				System.out.println(user + " picked " + elementArray.list[sum]);		
 		}
 
 		else if (choice==2){
