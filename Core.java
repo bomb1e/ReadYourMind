@@ -17,14 +17,12 @@ public class Core {
 	public String randomElementPicker(String[] array) {
 		return array[rnd.nextInt(array.length)];
 	}
-	
 
 	public int coreGame(String[][] cardArray){
 		int sum = 0;
 		for (int i = 0; i < cardArray.length; i++) {
-		String[] workingArray = new String[cardArray[i].length];
-		workingArray = cardArray[i];
-		// jumbler(workingArray);
+			String[] workingArray = new String[cardArray[i].length];
+			workingArray = cardArray[i];
 			// Show Card to user
 			for (int j = 1; j < workingArray.length; j++) {
 				System.out.print(workingArray[j] + " ");
@@ -32,11 +30,11 @@ public class Core {
 					System.out.println("\n");
 				}	
 			}
-		System.out.println("Is your selection in this card?\n (y/n)");
-			if((in.nextLine()).equals("y")) {
-				// add card[1] to sum if 'Yes'
-				sum = sum + Integer.parseInt(workingArray[0]);
-			}
+			System.out.println("Is your selection in this card? (y/n)");
+				if((in.nextLine()).equals("y")) {
+					// add card[1] to sum if 'Yes'
+					sum = sum + Integer.parseInt(workingArray[0]);
+				}
 		}
 		return sum;
 	}
