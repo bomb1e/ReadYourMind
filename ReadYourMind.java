@@ -12,6 +12,35 @@ public class ReadYourMind{
 		Scanner num = new Scanner(System.in);
 		Scanner text = new Scanner(System.in);
 		// Scanner input3 = new Scanner(System.in);
+		System.out.println("______________________________________________________________________________");
+		System.out.println("   _____  .__            .___ __________                   .___               |");
+		System.out.println("  /     \\ |__| ____    __| _/ \\______   \\ ____ _____     __| _/___________    |");
+		System.out.println(" /  \\ /  \\|  |/    \\  / __ |   |       _// __ \\\\__  \\   / __ |/ __ \\_  __ \\   |");
+		System.out.println("/    Y    \\  |   |  \\/ /_/ |   |    |   \\  ___/ / __ \\_/ /_/ \\  ___/|  | \\/   |");
+		System.out.println("\\____|__  /__|___|  /\\____ |   |____|_  /\\___  >____  /\\____ |\\___  >__|      |");
+		System.out.println("        \\/        \\/      \\/          \\/     \\/     \\/      \\/    \\/          |");
+		System.out.println("   _dMMMb._              .adOOOOOOOOOba.              _,dMMMb_                |");
+		System.out.println("  dP'  ~YMMb            dOOOOOOOOOOOOOOOb            aMMP~  `Yb               |");
+		System.out.println("  V      ~\"Mb          dOOOOOOOOOOOOOOOOOb          dM\"~      V               |");
+		System.out.println("           `Mb.       dOOOOOOOOOOOOOOOOOOOb       ,dM'                        |");
+		System.out.println("            `YMb._   |OOOOOOOOOOOOOOOOOOOOO|   _,dMP'                         |");
+		System.out.println("       __     `YMMM| OP'~\"YOOOOOOOOOOOP\"~`YO |MMMP'     __                    |");
+		System.out.println("     ,dMMMb.     ~~' OO     `YOOOOOP'     OO `~~     ,dMMMb.                  |");
+		System.out.println("  _,dP~  `YMba_      OOb      `OOO'      dOO      _aMMP'  ~Yb._               |");
+		System.out.println("<MMP'     `~YMMa_   YOOo   @  OOO  @   oOOP   _adMP~'      `YMM>             |");
+		System.out.println("             `YMMMM\\`OOOo     OOO     oOOO'/MMMMP'                           |");
+		System.out.println("      ,aa.     `~YMMb `OOOb._,dOOOb._,dOOO'dMMP~'       ,aa.                  |");
+		System.out.println("    ,dMYYMba._         `OOOOOOOOOOOOOOOOO'          _,adMYYMb.                |");
+		System.out.println("   ,MP'   `YMMba._      OOOOOOOOOOOOOOOOO       _,adMMP'   `YM.               |");
+		System.out.println("   MP'        ~YMMMba._ YOOOOPVVVVVYOOOOP  _,adMMMMP~       `YM               |");
+		System.out.println("  YMb           ~YMMMM\\`OOOOI`````IOOOOO'/MMMMP~           dMP               |");
+		System.out.println("    `Mb.           `YMMMb`OOOI,,,,,IOOOO'dMMMP'           ,dM'                |");
+		System.out.println("      `'                  `OObNNNNNdOO'                   `'                  |");
+		System.out.println("                            `~OOOOO~'                                         |");
+		System.out.println("==============================================================================|");
+		System.out.println("______________________________________________________________________________|1" +
+				"");
+		System.out.println("");
 		System.out.println("Welcome to MindReader Game.");
 		System.out.println("Do you REALLY want to play mind reader?");
 
