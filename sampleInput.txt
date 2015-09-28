@@ -1,5 +1,5 @@
 Opeyami
-Nana Ama
+Nana-Ama
 Amanze
 Mary
 Edmond
@@ -8,7 +8,7 @@ Roselyne
 Segun
 Bubu
 Ibukun
-yeboah
+Yeboah
 Mustapha
 Tabitha
 Tsatsu
@@ -25,7 +25,7 @@ Kpano
 Jumba
 Samuel
 Bernard
-kayode
+Kayode
 Maxwell
 Mukeli
 Law

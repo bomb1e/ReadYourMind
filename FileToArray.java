@@ -15,9 +15,10 @@ public class FileToArray {
 				
 	}
 
-	public void fileToArray(String fileName){
+	public String[] fileToArray(String fileName){
 		String element;
 		List<String> elementList = new ArrayList<String>();
+		String[] elementArray = new String[32];
 		try {
 			BufferedReader fileIn = new BufferedReader(new FileReader(fileName));
 			
@@ -28,7 +29,7 @@ public class FileToArray {
 		catch (IOException e) {
 			System.out.println("File not found");
 		}
-		 String[] elementArray = elementList.toArray(new String[0]);
+		 return elementArray = elementList.toArray(new String[0]);
 	}
 }
 

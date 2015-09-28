@@ -6,7 +6,7 @@ public class ReadYourMind{
 		GameArrays elementArray = new GameArrays();
 		Core core = new Core();
 		//This is the first part. It includes the welcome address, username, choice of play and leads to the main game.
-		int choice = 1;
+		int choice = 0;
 		int sum = 0;
 		String user = "";
 		Scanner num = new Scanner(System.in);
@@ -14,11 +14,15 @@ public class ReadYourMind{
 		// Scanner input3 = new Scanner(System.in);
 		System.out.println("Welcome to MindReader Game.");
 		System.out.println("Do you REALLY want to play mind reader?");
-
 		System.out.println("1. YES");
 		System.out.println("2. NO");
 		if (num.hasNextInt()) {
-			choice = num.nextInt();
+			try{
+				choice = num.nextInt();
+			}
+			catch (NumberFormatException e){
+				System.out.println("Please enter 1 or 2");
+			}
 			if(choice == 1){
 				System.out.println("Thanks for opting to play MindReader.");
 				System.out.println("Enter your username");
@@ -33,26 +37,23 @@ public class ReadYourMind{
 					if(i%5==0){
 						System.out.println("\n");
 					}
-
-					long startTime = System.currentTimeMillis();
-					long elapsedTime = 0L;
-					while (elapsedTime < 0.5*1000) {
-					// System.out.print("=============");
-   					elapsedTime = (new Date()).getTime() - startTime;
-					}
+					core.wait(0.5);
 				}
 				System.out.print("\n");
 				System.out.println("===================================================");	
-		
-
+				core.pressAnyKeyToContinue();
 				sum = core.coreGame(elementArray.cardArray);
-				System.out.println(user + " picked " + elementArray.list[sum]);		
+				System.out.println(user + " picked " + elementArray.list[sum]);	
+				core.wait(2);
+				System.out.println("\n'" + core.randomElementPicker(elementArray.exitQuotes) + "'" + " - @50NerdsOfGrey");	
 			}
 		else if (choice==2){
 			System.out.println("You have opted to exit ReadYourMind.");
+			core.wait(2);
+			System.out.println("\n'" + core.randomElementPicker(elementArray.noPlayQuotes) + "'" + " - gotinsults");
 		}
-		System.out.println("'" + core.randomElementPicker(elementArray.exitQuotes) + "'" + " - @50NerdsOfGrey");
-		System.out.println("Thank you for playing");
+		core.wait(2);
+		System.out.println("\n==============================Thank you for playing==============================");
 		}
 		
 
